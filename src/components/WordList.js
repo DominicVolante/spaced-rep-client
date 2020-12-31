@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Word from "../Word/Word";
-import UserContext from "../contexts/UserContext";
+import Word from "./Word";
+import UserContext from "../context/UserContext";
 
 class WordList extends Component {
   static contextType = UserContext;

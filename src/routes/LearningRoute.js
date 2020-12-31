@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import LearningCard from "../../components/LearningCard/LearningCard";
+import LearningCard from "../components/LearningCard";
 import UserService from "../services/user-service";
 import Prompt from "../components/Prompt";
 

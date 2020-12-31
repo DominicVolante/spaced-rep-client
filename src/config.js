@@ -1,5 +1,4 @@
 export default {
   //API_ENDPOINT: 'http://localhost:8000/api',
-  API_ENDPOINT: 'https://vast-retreat-47523.herokuapp.com/api',
-  TOKEN_KEY: 'blogful-client-auth-token',
+  TOKEN_KEY: "blogful-client-auth-token",
 };

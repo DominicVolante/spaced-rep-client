@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
-import Header from "./Header/Header";
-import PrivateRoute from "./PrivateRoute/PrivateRoute";
-import PublicOnlyRoute from "./PublicOnlyRoute/PublicOnlyRoute";
+import Header from "./Header";
+import PrivateRoute from "./PrivateRoute";
+import PublicOnlyRoute from "./PublicOnlyRoute";
 import RegistrationRoute from "../routes/RegistrationRoute";
 import LoginRoute from "../routes/LoginRoute";
 import DashboardRoute from "../routes/DashboardRoute";

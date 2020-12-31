@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import UserContext from "../contexts/UserContext";
+import UserContext from "../context/UserContext";
 import UserService from "../services/user-service";
 import WordList from "../components/WordList";
 

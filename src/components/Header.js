@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import TokenService from '../../services/token-service';
-import UserContext from '../../contexts/UserContext';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import TokenService from "../services/token-service";
+import UserContext from "../context/UserContext";
 
 class Header extends Component {
   static contextType = UserContext;

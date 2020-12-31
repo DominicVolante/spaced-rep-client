@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import LearningForm from '../../components/LearningForm/LearningForm';
+import React, { Component } from "react";
+import LearningForm from "./LearningForm";
 
 class LearningCard extends Component {
   render() {
@@ -19,15 +19,15 @@ class LearningCard extends Component {
             <p>Your total score is: {word.totalScore}</p>
 
             <p>
-              {' '}
-              You have answered this word correctly {word.wordCorrectCount}{' '}
+              {" "}
+              You have answered this word correctly {word.wordCorrectCount}{" "}
               times.
             </p>
             <p>
-              {' '}
+              {" "}
               You have answered this word incorrectly {
                 word.wordIncorrectCount
-              }{' '}
+              }{" "}
               times.
             </p>
           </div>

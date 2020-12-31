@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { Label, Input } from "../Form";
-import Button from "../Button";
-import UserService from "../../services/user-service";
-import UserContext from "../../contexts/UserContext";
+import { Label, Input } from "./Form";
+import Button from "./Button";
+import UserService from "../services/user-service";
+import UserContext from "../context/UserContext";
 
 class LearningForm extends Component {
   static contextType = UserContext;

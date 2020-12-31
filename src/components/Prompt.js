@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import UserContext from "../contexts/UserContext";
+import UserContext from "../context/UserContext";
 import Button from "./Button";
 
 class Prompt extends Component {
