@@ -20,7 +20,7 @@ class LearningForm extends Component {
       <div>
         <form onSubmit={(e) => this.handleSubmit(e)} className="guess-form">
           <Label htmlFor="learn-guess-input">
-            What's the translation for this word?
+            What does this Patwa word mean in english?
           </Label>
           <Input
             ref={this.firstInput}
@@ -29,7 +29,7 @@ class LearningForm extends Component {
             onChange={(e) => this.props.setGuess(e)}
           ></Input>
           <Button type="submit" disabled={this.props.guess === ""}>
-            Submit your answer
+            Submit
           </Button>
         </form>
       </div>

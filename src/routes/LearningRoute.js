@@ -5,7 +5,6 @@ import Prompt from "../components/Prompt";
 
 class LearningRoute extends Component {
   state = {
-    //Sample --- Replace with actual api information
     word: {},
     err: "",
     prompt: null,
