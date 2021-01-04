@@ -10,15 +10,14 @@ class Prompt extends Component {
 
     return (
       <div className="correct">
-        <h2 className="learn-header">You were correct! :D</h2>
-        <div className="DisplayScore">
-          <p>Your total score is: {this.context.nextWord.totalScore}</p>
-        </div>
+        <h2 className="learn-header">Correct</h2>
         <div className="DisplayFeedback">
           <p>
-            The correct translation for {word.nextWord} was{" "}
-            {this.context.nextWord.answer} and you chose {guess}!
+            {word.nextWord} means: {guess}
           </p>
+        </div>
+        <div className="DisplayScore">
+          <p>Your current score is: {this.context.nextWord.totalScore}</p>
         </div>
       </div>
     );
@@ -29,15 +28,15 @@ class Prompt extends Component {
 
     return (
       <div className="incorrect">
-        <h2 className="learn-header">{"Good try, but not quite right :("}</h2>
-        <div className="DisplayScore">
-          <p>Your total score is: {this.context.nextWord.totalScore}</p>
-        </div>
+        <h2 className="learn-header">{"Keep trying!"}</h2>
         <div className="DisplayFeedback">
           <p>
-            The correct translation for {word.nextWord} was{" "}
-            {this.context.nextWord.answer} and you chose {guess}!
+            {word.nextWord} actually means: {this.context.nextWord.answer}. You
+            tried "{guess}".
           </p>
+        </div>
+        <div className="DisplayScore">
+          <p>Your current score is: {this.context.nextWord.totalScore}</p>
         </div>
       </div>
     );
@@ -53,7 +52,7 @@ class Prompt extends Component {
         {this.context.nextWord.isCorrect === true
           ? this.renderCorrect()
           : this.renderIncorrect()}
-        <Button onClick={() => this.handleNext()}>Try another word!</Button>
+        <Button onClick={() => this.handleNext()}>Next word</Button>
       </div>
     );
   }
