@@ -21,7 +21,7 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "predeploy": "npm run build",
-    "deploy": "vercel --prod"
+    "deploy": "vercel --prod --build-env CI="
   },
   "eslintConfig": {
     "extends": "react-app"
